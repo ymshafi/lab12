@@ -8,7 +8,7 @@
 # Add a cancel button with a red background
 # When the cancel button is pressed, change the color from red to blue
 # and then back to red when pressed again
-
+# Read the comment above line 24
 from Tkinter import *
 
 class MyApp:
@@ -20,8 +20,9 @@ class MyApp:
 		self.button1 = Button(self.myContainer1)
 		self.button1.configure(text="OK", background= "green")
 		self.button1.pack(side=LEFT)	
+		# Do not change <Button-1> when you create Button 2 :)
 		self.button1.bind("<Button-1>", self.button1Click) ### (1)
-
+		
 		
 	def button1Click(self, event):    ### (3)
 		if self.button1["background"] == "green": ### (4)
