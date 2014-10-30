@@ -19,7 +19,7 @@ class MyApp:
 		
 		self.button1 = Button(self.myContainer1)
 		self.button1.configure(text="OK", background= "green")
-		self.button1.pack(side=LEFT)	
+		self.button1.grid(row=0, column=0)	
 		# Do not change <Button-1> when you create Button 2 :)
 		self.button1.bind("<Button-1>", self.button1Click) ### (1)
 		
